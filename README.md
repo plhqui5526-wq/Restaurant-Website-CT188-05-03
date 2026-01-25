@@ -1,7 +1,7 @@
 # Restaurant-Website-CT188-05-03
 Một website về đồ ăn healthy của một nhà hàng theo kiểu eat-clean.
 
-Website sẽ có tổng cộng **5 trang**.
+Website sẽ có tổng cộng **5 trang**. <br>
 **1. Home (Quí) <br>
 2. About us <br>
 3. Menu <br>
@@ -10,9 +10,9 @@ Website sẽ có tổng cộng **5 trang**.
 
 Mọi người có thể tham khảo Layout trên trang: https://dribbble.com/shots/15785732-Restaurant-Landing-Page-Bites 
 
-**Việc cần làm cho mỗi thành viên.**
-Nhóm trưởng, nhóm phó: check code của các thành viên khác.
-Tất cả thành viên:
+**Việc cần làm cho mỗi thành viên.** <br>
+Nhóm trưởng, nhóm phó: check code của các thành viên khác. <br>
+Tất cả thành viên: <br>
 **1. Vẽ wireframe cho webpage của mình <br>
 2. Code theo wireframe <br>
 3. Tuân thủ theo cách định dạng chữ, tone màu trên website. <br>
