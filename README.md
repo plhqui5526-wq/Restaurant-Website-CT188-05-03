@@ -18,6 +18,13 @@ Tất cả thành viên: <br>
 3. Tuân thủ theo cách định dạng chữ, tone màu trên website. <br>
 4. Commit code của mình lên Repo.** <br>
 
+**Hướng dẫn dùng Git:** <br>
+1. _(trai đẹp nói tiếng Anh, nói rất chậm)_ https://www.youtube.com/watch?v=hrTQipWp6co <br>
+2. _(trai cute nói tiếng Việt, nói rất nhanh)_ https://youtu.be/1JuYQgpbrW0?si=yZ0v8IMPn9HMpQzF <br>
+3. _(trai bình thường nói tiếng Việt, nói rất nhiều)_ https://youtube.com/playlist?list=PLyxSzL3F7485Xgn7novgNxnou8QU6i485&si=aKEZynY3UkU5QMn6 <br>
+
+
+**Layout** <br>
 **Trang About us:**
 <img width="1029" height="552" alt="image" src="https://github.com/user-attachments/assets/2aa42b1c-da99-4357-88c4-3ce110de6671" />
 
