@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hương Việt - Thực đơn</title>
+    <link rel="shortcut icon" type="image/png" href="/Images/chicken.png">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/menu.css">
+
+    <style>
+        img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <a href="index.html">
+                <img class="top-icon" src="/Images/chicken.png" alt="logo">
+            </a>
+                <ul class="header__right-section">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="thucdon.html">Thực Đơn</a></li>
+                    <li><a href="danhgia.html">Đánh Giá</a></li>
+                    <li><a href="vechungtoi.html">Về Chúng Tôi</a></li>
+                    <li><a href="datban.html">Đặt Bàn</a></li>
+                </ul>  
+        </nav>
+    </header>
+
+
+<main>
+    <section class="title">
+        <h1>MENU</h1>
+    </section>
+
+    <!-- CATEGORY -->
+    <section class="category">
+        <button onclick="showMenu('main')">Món mặn</button>
+        <button onclick="showMenu('vegetarian')">Món chay</button>
+        <button onclick="showMenu('dessert')">Tráng miệng</button>
+    </section>
+
+
+    <!-- ================= MÓN CHÍNH ================= -->
+    <section id="main" class="menu-container">
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/2.png">
+            </div>
+            <h3>Cơm Tấm Trứng Tép</h3>
+            <p class="highlight">52.000đ</p>
+            <p class="menu-card__description">Cơm tấm dẻo, trứng béo, tép rim mặn ngọt đậm vị.</p>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/4.png">
+            </div>
+            <h3>Cơm Gà</h3>
+            <p class="highlight">35.000đ</p>
+            <p class="menu-card__description">Cơm nóng, gà mềm ngọt, kèm sốt thơm ngon.</p>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/6.png">
+            </div>
+            <h3>Cơm Tép Kho Tàu</h3>
+            <p class="highlight">43.000đ</p>
+            <p class="menu-card__description">Tép mềm, hòa quyện mặn ngọt </p>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/10.png">
+            </div>
+            <h3>Mì Gà</h3>
+            <p class="highlight">45.000đ</p>
+            <p class="menu-card__description">Gà giàu đạm, cùng mì có nhiều năng lượng</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= MÓN CHAY ================= -->
+    <section id="vegetarian" class="menu-container hidden">
+
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/8.png">
+            </div>
+            <h3>Salad Đậu Hủ</h3>
+            <p class="highlight">33.000đ</p>
+            <p class="menu-card__description">Đậu hủ giòn mềm, rau tươi, sốt béo nhẹ.</p>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/1.png">
+            </div>
+            <h3>Salad Thịt Bò Chay</h3>
+            <p class="highlight">38.000đ</p>
+            <p class="menu-card__description">Bò chay dai mềm, trộn rau tươi chua ngọt.</p>
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRÁNG MIỆNG ================= -->
+    <section id="dessert" class="menu-container hidden">
+
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/12.png">
+            </div>
+            <h3>Sinh Tố Trái Cây</h3>
+            <p class="highlight">40.000đ</p>
+            <p class="menu-card__description">Trái cây tươi xay mịn, ngọt thanh, giải nhiệt.</p>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-card__image-box">
+                <img src="/Images/Menu/11.png">
+            </div>
+            <h3>Poke Bowl Cá Hồi</h3>
+            <p class="highlight">45.000đ</p>
+            <p class="menu-card__description">Món tráng miệng giàu đạm và chất béo tốt</p>
+        </div>
+
+    </section>
+</main>
+
+    <footer>
+        <section class="grid-footer">
+            <div class="flex-footer-column">
+                <h3>ĐIỀU HƯỚNG</h3>
+
+                <a href="index.html">Trang Chủ</a>
+                <a href="thucdon.html">Thực Đơn</a>
+                <a href="danhgia.html">Đánh Giá</a>
+                <a href="vechungtoi.html">Về Chúng Tôi</a>
+                <a href="datban.html">Đặt Bàn</a>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>MẠNG XÃ HỘI</h3>
+
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                <a href="https://www.x.com/" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>LIÊN HỆ</h3>
+
+                <p>Chi nhánh 1: Căn hộ Z003, Chung cư CADIF, Hưng Phú, Cái Răng, Cần Thơ</p>
+                <p>Chi nhánh 2: 987, Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ</p>
+                <p>Chi nhánh 3: 490, Đường 3/2, Ninh Kiều, Cần Thơ</p>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>GIỜ PHỤC VỤ</h3>
+
+                <p>Sáng: 6:00 - 12:00</p>
+                <p>Chiều/Tối: 14:00 - 20:00</p>
+            </div>
+        </section>
+    </footer>
+
+
+<!-- JAVASCRIPT -->
+    <script>
+        function showMenu(type) {
+            document.getElementById("main").classList.add("hidden");
+            document.getElementById("vegetarian").classList.add("hidden");
+            document.getElementById("dessert").classList.add("hidden");
+            document.getElementById(type).classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>

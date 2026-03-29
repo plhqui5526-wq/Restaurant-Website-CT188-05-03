@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hương Việt - Trang chủ</title>
+    <link rel="shortcut icon" type="image/png" href="/Images/chicken.png">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <a href="index.html">
+                <img class="top-icon" src="/Images/chicken.png" alt="logo">
+            </a>
+                <ul class="header__right-section">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="thucdon.html">Thực Đơn</a></li>
+                    <li><a href="danhgia.html">Đánh Giá</a></li>
+                    <li><a href="vechungtoi.html">Về Chúng Tôi</a></li>
+                    <li><a href="datban.html">Đặt Bàn</a></li>
+                </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-introduction">
+            <div class="menu-introduction__left">
+                <h1>Nâng Cao Sức Khỏe</h1>
+                <p>
+                    Với sự kết hợp giữa hương vị truyền thống Việt Nam và những món ăn đơn giản, giàu dinh dưỡng, 
+                    bạn sẽ tìm thấy những món <span class = "highlight">quen thuộc</span>, kèm theo đó là những món ăn <span class = "highlight">giàu đạm</span>, 
+                    rất thích hợp cho những người muốn <span class = "highlight">xây dựng cơ bắp</span>.
+                </p>
+                <button class="introduction__buttons" onclick="goToMenu()">MENU</button>
+            </div>
+            <div class="menu-introduction__right">
+                <img src="/Images/Menu/2.png">
+            </div>
+        </section>
+
+        <section class="reservation-introduction">
+            <div class="reservation-introduction__left">
+                <img src="/Images/Restaurant/Restaurant-View-1.jpg">
+            </div>
+            
+            <div class="reservation-introduction__right">
+                <h1>Chuẩn Bị Trước</h1>
+                <p>
+                    Chúng tôi vừa hoàn thành tân trang quán và <span class = "highlight">tăng thêm số lượng bàn</span>. Kính mong quý khách ghé ngang để
+                    trải nghiệm
+                </p>
+                <button class="introduction__buttons" onclick="goToReservation()">ĐẶT BÀN</button>
+            </div>
+            
+        </section>
+
+        <section class="AbR-introduction">
+            <div class="AbR-introduction__left">
+                <h1>Nhà hàng Hương Việt</h1>
+                <p>
+                    Với mục tiêu đem lại trải nghiệm ẩm thực dân dã cùng hàm lượng dinh dưỡng dồi dào, đặc biệt là cho 
+                    những người đang tập thể dục muốn nâng cao sức khỏe, chúng tôi vô cùng vinh hạnh khi nhận được những 
+                    đánh giá tốt từ khách hàng.
+                </p>
+                <button class="introduction__buttons" onclick="goToAbout()">Về Chúng Tôi</button>
+                <button class="introduction__buttons" onclick="goToReviews()">Đánh Giá</button>
+            </div>
+            <div class="AbR-introduction__right">
+                <img src="/Images/AboutUs/Gordon-Ramsay.webp">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="grid-footer">
+            <div class="flex-footer-column">
+                <h3>ĐIỀU HƯỚNG</h3>
+
+                <a href="index.html">Trang Chủ</a>
+                <a href="thucdon.html">Thực Đơn</a>
+                <a href="danhgia.html">Đánh Giá</a>
+                <a href="vechungtoi.html">Về Chúng Tôi</a>
+                <a href="datban.html">Đặt Bàn</a>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>MẠNG XÃ HỘI</h3>
+
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                <a href="https://www.x.com/" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>LIÊN HỆ</h3>
+
+                <p>Chi nhánh 1: Căn hộ Z003, Chung cư CADIF, Hưng Phú, Cái Răng, Cần Thơ</p>
+                <p>Chi nhánh 2: 987, Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ</p>
+                <p>Chi nhánh 3: 490, Đường 3/2, Ninh Kiều, Cần Thơ</p>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>GIỜ PHỤC VỤ</h3>
+
+                <p>Sáng: 6:00 - 12:00</p>
+                <p>Chiều/Tối: 14:00 - 20:00</p>
+            </div>
+        </section>
+    </footer>
+
+<!-- JAVASCRIPT -->
+    <script>
+        function goToMenu() {
+            window.location.href = "thucdon.html";
+        }
+
+        function goToReservation() {
+            window.location.href = "datban.html";
+        }
+
+        function goToAbout() {
+            window.location.href = "vechungtoi.html";
+        }
+
+        function goToReviews() {
+            window.location.href = "danhgia.html"
+        }
+
+    </script>
+</body>
+</html>

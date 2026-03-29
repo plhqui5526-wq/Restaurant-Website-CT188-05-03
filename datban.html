@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hương Việt - Đặt bàn</title>
+    <link rel="shortcut icon" type="image/png" href="/Images/chicken.png">
+    <link rel="stylesheet" href="/css/reserve.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <a href="index.html">
+                <img class="top-icon" src="/Images/chicken.png" alt="logo">
+            </a>
+                <ul class="header__right-section">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="thucdon.html">Thực Đơn</a></li>
+                    <li><a href="danhgia.html">Đánh Giá</a></li>
+                    <li><a href="vechungtoi.html">Về Chúng Tôi</a></li>
+                    <li><a href="datban.html">Đặt Bàn</a></li>
+                </ul>  
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <section class="sidebar">
+                <input type="date" value="2026-02-25">
+                <input type="time">
+
+                <select id="floorSelect">
+                    <option value="1">Floor 1</option>
+                    <option value="2">Floor 2</option>
+                </select>
+
+                <div class="reservation-list" id="resList"></div>
+            </section>
+
+            <section class="map-area">
+                <h2>Tables Map</h2>
+
+                <div class="legend">
+                    <span class="badge available">Available</span>
+                    <span class="badge reserved">Reserved</span>
+                    <span class="badge ondine">On dine</span>
+                </div>
+
+                <div class="table-grid" id="tableGrid"></div>
+
+                <div class="help-widget">
+                    <div class="help-bubble">Contact for help</div>
+                    <div class="help-avatar">👤</div>
+                </div>
+            </section>
+        </section>
+
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+                <h3>Table Reservation</h3>
+
+                <div class="form-group">
+                    <label>Customer name</label>
+                    <input type="text" id="custName" required/>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="text" id="custPhone" />
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" id="custEmail" />
+                </div>
+
+                <div class="form-group">
+                    <label>Table</label>
+                    <input type="text" id="tableInfo" readonly />
+                </div>
+
+                <div class="payment-box">
+                    <div class="qr">
+                        <img src="/Images/Reserve/qr.png" alt="QR thanh toán">
+                    </div>
+
+                    <div class="bank">
+                        <strong>Ngân hàng:</strong> Vietcombank<br>
+                        <strong>Chủ TK:</strong> Lúa nếp Restaurant<br>
+                        <strong>Số TK:</strong> 123456789
+                    </div>
+                </div>
+
+                <div class="modal-actions">
+                    <button onclick="confirmBooking()" class="btn-primary">
+                        I have paid
+                    </button>
+                    <button onclick="closeModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="grid-footer">
+            <div class="flex-footer-column">
+                <h3>ĐIỀU HƯỚNG</h3>
+
+                <a href="index.html">Trang Chủ</a>
+                <a href="thucdon.html">Thực Đơn</a>
+                <a href="danhgia.html">Đánh Giá</a>
+                <a href="vechungtoi.html">Về Chúng Tôi</a>
+                <a href="datban.html">Đặt Bàn</a>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>MẠNG XÃ HỘI</h3>
+
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                <a href="https://www.x.com/" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>LIÊN HỆ</h3>
+
+                <p>Chi nhánh 1: Căn hộ Z003, Chung cư CADIF, Hưng Phú, Cái Răng, Cần Thơ</p>
+                <p>Chi nhánh 2: 987, Nguyễn Văn Cừ, Ninh Kiều, Cần Thơ</p>
+                <p>Chi nhánh 3: 490, Đường 3/2, Ninh Kiều, Cần Thơ</p>
+            </div>
+
+            <div class="flex-footer-column">
+                <h3>GIỜ PHỤC VỤ</h3>
+
+                <p>Sáng: 6:00 - 12:00</p>
+                <p>Chiều/Tối: 14:00 - 20:00</p>
+            </div>
+        </section>
+    </footer>
+
+    
+    <script src="/js/reserve.js"></script>
+</body>
+</html>
