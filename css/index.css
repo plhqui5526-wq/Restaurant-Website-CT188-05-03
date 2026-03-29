@@ -1,0 +1,246 @@
+main {
+    padding: 0px 75px;
+}
+
+.top-icon {
+    height: 60px;
+    width: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+
+    background-color: rgba(58, 90, 64, 0.8);
+    color: white;
+
+    padding: 0px 75px;
+}
+
+
+.header__right-section {
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.header__right-section a, 
+.header__right-section a:visited {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #3A5A40;
+    color: #ffffff;
+
+    padding: 30px 75px;
+    gap: 40px;
+}
+
+.flex-footer-column {
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flex-footer-column a, 
+.flex-footer-column a:visited,
+.flex-footer-column p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+}
+
+.menu-introduction {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    margin-bottom: 150px;
+}
+
+.menu-introduction__left {
+    flex: 1;
+}
+
+.menu-introduction__right {
+    aspect-ratio: 1/1;
+    max-width: 400px;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    flex: 1;
+}
+
+.menu-introduction__right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================== Reservation ============================== */
+
+.reservation-introduction {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 150px;
+}
+
+.reservation-introduction__right {
+    flex: 1;
+}
+
+.reservation-introduction__left {
+    aspect-ratio: 1/1;
+    max-width: 400px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+    overflow: hidden;
+
+    flex: 1;
+}
+
+.reservation-introduction__left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================== About us & Reviews ============================== */
+
+.AbR-introduction {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    margin-bottom: 150px;
+}
+
+.AbR-introduction__left {
+    flex: 1;
+}
+
+.AbR-introduction__right {
+    aspect-ratio: 1/1;
+    width: 400px;
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.AbR-introduction__right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.introduction__buttons {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    
+    padding: 12px 24px;
+
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3A5A40;
+    background-color: #3A5A40;
+    color: white;
+
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+
+}
+
+.introduction__buttons:hover {
+    padding: 12px 24px;
+
+    background-color: white;
+    color: #3A5A40;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #3A5A40;
+
+}
+
+.highlight {
+    color: #C0582B;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 80px;
+    }
+
+    main {
+        padding: 0px 20px;
+    }
+
+    .header {
+        padding: 0px 20px;
+    }
+
+    .header__right-section {
+        gap: 8px;
+    }
+    
+    .header__right-section a {
+        font-size: 14px;
+    }
+
+    .menu-introduction,
+    .reservation-introduction,
+    .AbR-introduction {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    .menu-introduction__right,
+    .reservation-introduction__left,
+    .AbR-introduction__right {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .grid-footer {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

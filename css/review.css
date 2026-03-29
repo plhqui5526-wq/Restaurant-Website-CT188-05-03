@@ -1,0 +1,84 @@
+/* BACKGROUND NHÀ HÀNG */
+body{
+    margin:0;
+    font-family: Arial;
+    background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') no-repeat center center/cover;
+}
+
+/* LỚP PHỦ MỜ */
+.overlay{
+    background:rgba(59,79,60,0.7);
+    min-height:100vh;
+    padding:50px;
+}
+
+/* TITLE */
+.section-title{
+    color:white;
+}
+
+/* KHỐI REVIEW */
+.review-section{
+    background:rgba(255,255,255,0.9);
+    padding:40px;
+    border-radius:15px;
+    backdrop-filter: blur(8px);
+}
+
+/* HEADER */
+.review-section__header h1{
+    color:#3B4F3C;
+    margin-bottom:30px;
+}
+
+/* GRID */
+.review-section__grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+
+/* CARD */
+.review-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    border-left:5px solid #8B0000;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.review-card:hover{
+    transform:scale(1.03);
+}
+
+/* review-card__stars */
+.review-card__stars{
+    color:#e0b354;
+    margin-top:5px;
+}
+
+/* USER */
+.review-card__user{
+    display:flex;
+    align-items:center;
+    margin-top:15px;
+}
+
+.review-card__user img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.review-card__user h4{
+    margin:0;
+    margin-left:10px;
+    color:#8B0000;
+}
+
+.review-card__user span{
+    margin-left:10px;
+    font-size:13px;
+    color:#3B4F3C;
+}
