@@ -43,7 +43,8 @@
 /* MENU CONTAINER */
 .menu-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Vì đã có auto-fit nên em không có viết thêm
+    @media cho điện thoại ạ*/
     gap: 25px;
     padding: 40px;
 }

@@ -10,6 +10,7 @@ body {
   color: #333;
 }
 
+/* Khai báo biến màu dùng lại nhiều lần */
 :root {
   --primary-color: #3b6660; 
   --primary-hover: #2d524d;
@@ -25,54 +26,16 @@ body {
 }
 
 
-.header {
-  padding: 20px 30px;
-  background-color: var(--primary-color);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.header h1 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.topbar {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.search-box input {
-  border: none;
-  outline: none;
-  padding: 8px 15px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  transition: 0.3s;
-}
-
-.search-box input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.search-box input:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #333;
-}
 
 .container {
-  display: flex;
+  display: flex; /*Cho sidebar và map*/
   gap: 25px;
   padding: 30px;
   max-width: 1400px;
   margin: 0 auto;
 }
 
+/*Khung nhập thông tin bên trái*/
 .sidebar {
   width: 280px;
   padding: 20px;
@@ -98,7 +61,7 @@ body {
 }
 
 
-
+/*Danh sách đặt bàn*/
 .reservation-list {
   height: 400px;
   overflow-y: auto;
@@ -137,6 +100,8 @@ body {
   margin-bottom: 4px;
 }
 
+
+/*Khu vực hiển thị bàn*/
 .map-area {
   flex: 1;
   padding: 25px;
@@ -174,11 +139,13 @@ body {
   border-radius: 4px;
 }
 
+/* Màu từng trạng thái */
 .badge.available::before { background: var(--status-available); }
 .badge.reserved::before { background: var(--status-reserved); }
 .badge.ondine::before { background: var(--status-ondine); }
 
 
+/*Bàn ghế*/
 .table-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -245,7 +212,7 @@ body {
 .table-wrap.ondine .chair { background: #fca5a5; }
 
 
-
+/*Khung hiển thị khi bấm chọn bàn*/
 .modal {
   position: fixed;
   inset: 0;
@@ -386,6 +353,8 @@ body {
   background: #cbd5e1;
 }
 
+
+/*Trợ giúp*/
 .help-widget {
   position: fixed;
   right: 30px;
@@ -428,4 +397,92 @@ body {
 
 .input-error {
   border: 1px solid red;
+}
+
+/*Phần này em dùng AI để chuyển sang điện thoại ạ, em có comment bên dưới những gì em hiểu được từ code này ạ*/
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 80px;
+  }
+
+  /* chuyển từ flex-direction: row sang column để hiển thị tốt hơn trên điện thoại do điện thoại không hiển thị
+  nội dung ngang như trên laptop và tablet, nếu như không điều chỉnh flex-direction thì bên phải sẽ chỉ hiển
+  thị một cột bàn dọc từ trên xuống dưới, rất khó nhìn */
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* thanh bên trái */
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  /* khu vực hiển thị bàn */
+  .map-area {
+    padding: 15px;
+  }
+
+  .map-area h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .legend {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* TABLE */
+  .table-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .table-box {
+    width: 80px;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .chair {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* MODAL */
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  /* thanh toán */
+  .payment-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .qr {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* BUTTONS */
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .help-widget {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .help-bubble {
+    display: none; /* giữ lại chỉ một mình icon */
+  }
 }

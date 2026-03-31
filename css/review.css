@@ -25,8 +25,8 @@ body{
     backdrop-filter: blur(8px);
 }
 
-/* HEADER */
-.review-section__header h1{
+/* tiêu đề */
+.review-section__title h1{
     color:#3B4F3C;
     margin-bottom:30px;
 }
@@ -52,13 +52,13 @@ body{
     transform:scale(1.03);
 }
 
-/* review-card__stars */
+/* ngôi sao */
 .review-card__stars{
     color:#e0b354;
     margin-top:5px;
 }
 
-/* USER */
+/* người đánh giá */
 .review-card__user{
     display:flex;
     align-items:center;
@@ -81,4 +81,48 @@ body{
     margin-left:10px;
     font-size:13px;
     color:#3B4F3C;
+}
+
+/*responsive web điện thoại*/
+@media (max-width: 768px) {
+
+    main {
+        padding: 0px 20px;
+    }
+
+    /* TITLE */
+    .section-title {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .review-section__title h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    /* grid: 1 column */
+    .review-section__grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* điều chỉnh card */
+    .review-card {
+        padding: 15px;
+    }
+
+    .review-card p {
+        font-size: 14px;
+    }
+
+    .review-card__stars {
+        font-size: 14px;
+    }
+
+    .review-card__user img {
+        width: 40px;
+        height: 40px;
+    }
 }

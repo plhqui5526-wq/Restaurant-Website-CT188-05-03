@@ -2,6 +2,7 @@ main {
     padding: 0px 75px;
 }
 
+/* ==================== header & footer ==================== */
 .top-icon {
     height: 60px;
     width: auto;
@@ -43,6 +44,7 @@ main {
     color: inherit;
 }
 
+/* footer grid + flex */
 .grid-footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -75,6 +77,7 @@ main {
     margin: 0;
 }
 
+/* ==================== phần nội dung trang ==================== */
 .menu-introduction {
     display: flex;
     align-items: center;
@@ -116,6 +119,14 @@ main {
     flex: 1;
 }
 
+
+/* Dạ clip-path là em dùng sự trợ giúp của Google ạ. Lúc đầu em tính tự tạo hình thoi bằng cách tạo hình vuông
+xong rồi em rotate 45 độ, nhưng mà làm vậy thì hình ảnh bên trong cũng rotate theo, sau khi thử đặt một vài 
+container bên ngoài hình ảnh nhưng vẫn không được thì em mới sử dụng clip-path ạ. Clip là cắt những vùng bên ngoài,
+path là lối đi. Về cơ bản thì khi nhập polygon sẽ cần các điểm tọa độ, thay vì em nhập từng pixel thì em sẽ chia
+container ra thành phần trăm, sau đó em nhập các điểm x, y trong container đó. Trong polygon có 8 chỉ số phần trăm,
+tượng trưng cho 4 điểm tọa độ (x,y). Có thể hoán đổi vị trí của các cặp tọa độ với nhau trong polygon, miễn sao vẫn giữ
+nguyên địa điểm của nó để clip phần dư và giữ lại hình thoi là được ạ.*/
 .reservation-introduction__left {
     aspect-ratio: 1/1;
     max-width: 400px;
@@ -189,11 +200,16 @@ main {
 
 }
 
+/* ==================== highlight chữ ==================== */
 .highlight {
     color: #C0582B;
     font-weight: 600;
 }
 
+
+/* ==================== responsive web trên điện thoại ==================== */
+/*Phần này em nhờ AI để giúp em biết được nên dùng câu lệnh nào để nội dung chỉ hiển thị trên điện thoại ạ
+(là @media với max-width)*/
 @media (max-width: 768px) {
 
     body {
@@ -216,6 +232,8 @@ main {
         font-size: 14px;
     }
 
+    /*vì điện thoại không có hiển thị màn hình ngang như laptop và tablet, nên em chuyển flex-direction từ row 
+    sang column ạ*/
     .menu-introduction,
     .reservation-introduction,
     .AbR-introduction {
@@ -232,6 +250,8 @@ main {
         margin: 0 auto;
     }
 
+    /* Nếu như chia ra làm 4 column như trên laptop thì sẽ bị mất chữ ở cột cuối cùng, nên em chỉ để duy nhất
+    một cột ạ*/
     .grid-footer {
         grid-template-columns: 1fr;
         padding: 20px;

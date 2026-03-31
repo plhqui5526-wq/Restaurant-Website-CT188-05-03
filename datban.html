@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hương Việt - Đặt bàn</title>
     <link rel="shortcut icon" type="image/png" href="/Images/chicken.png">
-    <link rel="stylesheet" href="css/reserve.css">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/reserve.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -31,6 +31,7 @@
 
     <main>
         <section class="container">
+            <!-- Bên trái là nhập thông tin bàn cần đặt -->
             <section class="sidebar">
                 <input type="date" value="2026-02-25">
                 <input type="time">
@@ -43,6 +44,7 @@
                 <div class="reservation-list" id="resList"></div>
             </section>
 
+            <!-- Bên phải là vị trí bàn -->
             <section class="map-area">
                 <h2>Tables Map</h2>
 
@@ -61,6 +63,7 @@
             </section>
         </section>
 
+        <!-- Bảng nhập thông tin khách hàng -->
         <div id="bookingModal" class="modal">
             <div class="modal-content">
                 <h3>Table Reservation</h3>
@@ -146,6 +149,6 @@
     </footer>
 
     
-    <script src="js/reserve.js"></script>
+    <script src="/js/reserve.js"></script>
 </body>
 </html>

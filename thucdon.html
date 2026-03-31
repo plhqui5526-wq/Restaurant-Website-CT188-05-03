@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hương Việt - Thực đơn</title>
     <link rel="shortcut icon" type="image/png" href="/Images/chicken.png">
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="/css/menu.css">
 
     <style>
         img {
@@ -42,107 +42,107 @@
     </header>
 
 
-<main>
-    <section class="title">
-        <h1>MENU</h1>
-    </section>
+    <main>
+        <section class="title">
+            <h1>MENU</h1>
+        </section>
 
-    <!-- CATEGORY -->
-    <section class="category">
-        <button onclick="showMenu('main')">Món mặn</button>
-        <button onclick="showMenu('vegetarian')">Món chay</button>
-        <button onclick="showMenu('dessert')">Tráng miệng</button>
-    </section>
+        <!-- CATEGORY -->
+        <section class="category">
+            <button onclick="showMenu('main')">Món mặn</button>
+            <button onclick="showMenu('vegetarian')">Món chay</button>
+            <button onclick="showMenu('dessert')">Tráng miệng</button>
+        </section>
 
 
-    <!-- ================= MÓN CHÍNH ================= -->
-    <section id="main" class="menu-container">
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/2.png">
+        <!-- ================= MÓN CHÍNH ================= -->
+        <section id="main" class="menu-container">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/2.png">
+                </div>
+                <h3>Cơm Tấm Trứng Tép</h3>
+                <p class="highlight">52.000đ</p>
+                <p class="menu-card__description">Cơm tấm dẻo, trứng béo, tép rim mặn ngọt đậm vị.</p>
             </div>
-            <h3>Cơm Tấm Trứng Tép</h3>
-            <p class="highlight">52.000đ</p>
-            <p class="menu-card__description">Cơm tấm dẻo, trứng béo, tép rim mặn ngọt đậm vị.</p>
-        </div>
 
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/4.png">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/4.png">
+                </div>
+                <h3>Cơm Gà</h3>
+                <p class="highlight">35.000đ</p>
+                <p class="menu-card__description">Cơm nóng, gà mềm ngọt, kèm sốt thơm ngon.</p>
             </div>
-            <h3>Cơm Gà</h3>
-            <p class="highlight">35.000đ</p>
-            <p class="menu-card__description">Cơm nóng, gà mềm ngọt, kèm sốt thơm ngon.</p>
-        </div>
 
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/6.png">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/6.png">
+                </div>
+                <h3>Cơm Tép Kho Tàu</h3>
+                <p class="highlight">43.000đ</p>
+                <p class="menu-card__description">Tép mềm, hòa quyện mặn ngọt </p>
             </div>
-            <h3>Cơm Tép Kho Tàu</h3>
-            <p class="highlight">43.000đ</p>
-            <p class="menu-card__description">Tép mềm, hòa quyện mặn ngọt </p>
-        </div>
 
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/10.png">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/10.png">
+                </div>
+                <h3>Mì Gà</h3>
+                <p class="highlight">45.000đ</p>
+                <p class="menu-card__description">Gà giàu đạm, cùng mì có nhiều năng lượng</p>
             </div>
-            <h3>Mì Gà</h3>
-            <p class="highlight">45.000đ</p>
-            <p class="menu-card__description">Gà giàu đạm, cùng mì có nhiều năng lượng</p>
-        </div>
 
-    </section>
+        </section>
 
 
-    <!-- ================= MÓN CHAY ================= -->
-    <section id="vegetarian" class="menu-container hidden">
+        <!-- ================= MÓN CHAY ================= -->
+        <section id="vegetarian" class="menu-container hidden">
 
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/8.png">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/8.png">
+                </div>
+                <h3>Salad Đậu Hủ</h3>
+                <p class="highlight">33.000đ</p>
+                <p class="menu-card__description">Đậu hủ giòn mềm, rau tươi, sốt béo nhẹ.</p>
             </div>
-            <h3>Salad Đậu Hủ</h3>
-            <p class="highlight">33.000đ</p>
-            <p class="menu-card__description">Đậu hủ giòn mềm, rau tươi, sốt béo nhẹ.</p>
-        </div>
 
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/1.png">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/1.png">
+                </div>
+                <h3>Salad Thịt Bò Chay</h3>
+                <p class="highlight">38.000đ</p>
+                <p class="menu-card__description">Bò chay dai mềm, trộn rau tươi chua ngọt.</p>
             </div>
-            <h3>Salad Thịt Bò Chay</h3>
-            <p class="highlight">38.000đ</p>
-            <p class="menu-card__description">Bò chay dai mềm, trộn rau tươi chua ngọt.</p>
-        </div>
 
-    </section>
+        </section>
 
 
-    <!-- ================= TRÁNG MIỆNG ================= -->
-    <section id="dessert" class="menu-container hidden">
+        <!-- ================= TRÁNG MIỆNG ================= -->
+        <section id="dessert" class="menu-container hidden">
 
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/12.png">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/12.png">
+                </div>
+                <h3>Sinh Tố Trái Cây</h3>
+                <p class="highlight">40.000đ</p>
+                <p class="menu-card__description">Trái cây tươi xay mịn, ngọt thanh, giải nhiệt.</p>
             </div>
-            <h3>Sinh Tố Trái Cây</h3>
-            <p class="highlight">40.000đ</p>
-            <p class="menu-card__description">Trái cây tươi xay mịn, ngọt thanh, giải nhiệt.</p>
-        </div>
 
-        <div class="menu-card">
-            <div class="menu-card__image-box">
-                <img src="/Images/Menu/11.png">
+            <div class="menu-card">
+                <div class="menu-card__image-box">
+                    <img src="/Images/Menu/11.png">
+                </div>
+                <h3>Poke Bowl Cá Hồi</h3>
+                <p class="highlight">45.000đ</p>
+                <p class="menu-card__description">Món tráng miệng giàu đạm và chất béo tốt</p>
             </div>
-            <h3>Poke Bowl Cá Hồi</h3>
-            <p class="highlight">45.000đ</p>
-            <p class="menu-card__description">Món tráng miệng giàu đạm và chất béo tốt</p>
-        </div>
 
-    </section>
-</main>
+        </section>
+    </main>
 
     <footer>
         <section class="grid-footer">
